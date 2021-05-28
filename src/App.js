@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Formforinput from './components/Formforinput';
+import Todosboxes from './components/Todosboxes';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       </header>
 
       <Formforinput inputText={inputText} setInputText={setInputText} todoslist={todoslist} setTodoslist={setTodoslist} />
+      <Todosboxes todoslist={todoslist} setTodoslist={setTodoslist} />
     </div>
   );
 }

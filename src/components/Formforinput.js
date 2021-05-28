@@ -12,6 +12,7 @@ function Formforinput({setInputText,inputText,setTodoslist,todoslist}) {
     const submitTodoHandler = (event) =>{
         event.preventDefault();
         setTodoslist([...todoslist,{id:Date.now(),completed:false,text:inputText}])
+        setInputText("")
         console.log("value inserted to the todos list as array")     
 }
 
