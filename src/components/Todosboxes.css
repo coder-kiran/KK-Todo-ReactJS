@@ -1,4 +1,72 @@
+
+
 .completed{
     text-decoration: line-through;
     opacity: 0.5;
+}
+.center-todobox{
+
+width: 282px;
+position: relative;
+top: 100px;
+left: 520px;
+
+
+}
+
+.center-todobox ul{
+  
+    width: 280px;
+    margin: auto;
+    height: 297px;
+    list-style: none;
+    top: 10px;
+    position: relative;
+
+    
+    
+}
+
+.list-body{
+    display: flex;
+    justify-content:space-between;
+    width: 280px;
+    height: 50px;
+    margin-top: 10px;
+    background: #2ecc71;
+    box-sizing: border-box;   
+    border-radius: 5px 5px  30px ;
+    color: #fff;    
+}
+.li-div{
+    width: 80%;
+    height: 100%;   
+    
+}
+.li-div-sub{
+   padding: 10px;
+}
+.li-button{
+    height: 100%;
+    width: 20%;
+   
+    
+}
+
+.li-div li{
+   font-size: 25px;
+   
+    
+}
+.li-btn span{
+    position: relative;
+    right: 20px;
+    top: 14px;
+    font-size: 23px;
+}
+
+
+
+.center-todobox ul .list-body.li-div{
+    margin-top: 100px;
 }

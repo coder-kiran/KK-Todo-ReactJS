@@ -1,10 +1,11 @@
 import React from 'react'
 import './Todosboxes.css'
-
+    
 function Todosboxes({ todoslist, setTodoslist }) {
 
     return (
-        <div>
+       
+        <div className="center-todobox">
             <ul>
                 {
                     todoslist.map((item) => {
@@ -39,13 +40,19 @@ function Todosboxes({ todoslist, setTodoslist }) {
 
                         return (
 
-                            <div key={item.id} className="list-body">
+                            <div key={item.id} className="list-body" >
                                 {console.log("item completed status : ", item.completed)}
-                                <div className="">
+                                <div className="li-div" onClick={todoDelete}>
+                                    <div className="li-div-sub">
                                     <li className={`${item.completed ? "completed" : ""}`}>{item.text}</li>
+                                    </div>
                                 </div>
-                                <button onClick={todoDone}>Done</button>
-                                <button onClick={todoDelete}>Delete</button>
+                                <div className="li-btn">
+                              
+                                <span onClick={todoDone} class="fas fa-check"></span>
+                                {/* <span onClick={todoDelete} class="fas fa-trash"></span> */}
+                             
+                                </div>
 
                             </div>
 
@@ -54,6 +61,7 @@ function Todosboxes({ todoslist, setTodoslist }) {
                 }
             </ul>
         </div>
+ 
     )
 }
 

@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1> KK's todo list</h1>
+        <h1 > KK's todo list</h1>
       </header>
 
       <Formforinput inputText={inputText} setInputText={setInputText} todoslist={todoslist} setTodoslist={setTodoslist} />
