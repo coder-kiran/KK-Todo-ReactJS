@@ -1,68 +1,126 @@
-import React from 'react'
+import React,{useState} from 'react'
+import Categories from './Categories';
+import Removed from './Removed';
 import './Todosboxes.css'
-    
-function Todosboxes({ todoslist, setTodoslist }) {
 
-    return (
-       
-        <div className="center-todobox">
-            <ul>
-                {
-                    todoslist.map((item) => {
-                        // functions
-                        const todoDone = () => {
-                            console.log('item', item); // item {id: 1622226419487, completed: false, text: "home work"}
+function Todosboxes({ todoslist, setTodoslist ,manageChecked,checked,setChecked}) {
 
-                            // note that we are globally setting it using setTodolist
-                            setTodoslist(
-                                todoslist.map((item2) => {
-                                    console.log('item2', item2);  // item2 {id: 1622226419487, completed: false, text: "home work"}
-                                    if (item2.id === item.id) {
-                                        return {
-                                            ...item2, completed: !item2.completed
+    const [num, setNum] = useState([])
 
-                                        }
-                                    }
-                                    return item2 // why?                                                            
-                                })
-                            )
-                        }
+    return (     // This was the main return statement
+        <div className="carrier-sub">
 
-                        const todoDelete = () =>{
+            <div className="center-todobox">
+                <ul>
+                    {
+                        todoslist.map((item) => {    
 
-                            setTodoslist(
-                                todoslist.filter(obj=> item.id!==obj.id)                               
+const todoDone = () => {                               
+console.log('******item inside todoDone*****', item); 
+setTodoslist(
+todoslist.map((item2) => { //it will loop
+    console.log('******item2 inside todoDone*****', item2); 
+if (item2.id === item.id) {
+    console.log('******MATCHED*****'); 
+return { 
+       ...item2, completed: !item2.completed  // return like this if condition is true
+   
+     
+       }   //if true return the values to each slot of array 
+                           }
+return item2 // why?   //  else return like this and  value will be enter into argument(item2) of anonymous function above this line.Processed item2 is returned 
+})
+)
+
+setNum(
+todoslist.map((itemitem)=>{
+                                       
+if(itemitem.id===item.id){
+return{
+     ...itemitem,completed: !itemitem.completed
+}
+                                           
+}
+return itemitem
+                                        
+})
+)
+
+}
                               
-                            )
+                                  
+// const todoDelete = () => {
+//  setTodoslist(
+//    todoslist.filter(obj => item.id !== obj.id) 
+// )}
+const todoDelete = () => {
+    console.log('hi')
+    // setNum(todoslist)
+    setTodoslist(
+           todoslist.filter(obj => item.id !== obj.id) 
+        )
 
-                        }
+}
 
 
-                        return (
+                         
 
-                            <div key={item.id} className="list-body" >
-                                {console.log("item completed status : ", item.completed)}
-                                <div className="li-div" onClick={todoDelete}>
-                                    <div className="li-div-sub">
-                                    <li className={`${item.completed ? "completed" : ""}`}>{item.text}</li>
+                            return (
+
+                            
+                                <div key={item.id} className="list-body"
+                                    date={item.d.toDateString()}
+                                    time={item.d.toLocaleTimeString('en-US')}
+                                    
+                                >
+                                        {console.log('VALUES')}
+                                      {console.log("*1****Todolist state updated by todoDone function:******-",todoslist)}  
+                                      {console.log('************************num****************',num)}
+                                    <div className="li-div" onClick={todoDelete}>
+                                        <div className="li-div-sub">
+                                            <li className={`${item.completed ? "completed" : ""}`}>{item.text}</li>
+
+                                        </div>
+                                      
                                     </div>
-                                </div>
-                                <div className="li-btn">
-                              
-                                <span onClick={todoDone} class="fas fa-check"></span>
-                                {/* <span onClick={todoDelete} class="fas fa-trash"></span> */}
-                             
+                                   
+                                    <div className="li-btn" >
+
+                                        <span onClick={todoDone} className="fas fa-check check"></span>
+                                        {console.log("*****           2           ******-",todoslist)}
+                                        {manageChecked(num)}
+                                        {console.log(item.d.toString())}
+                                        {/* <span onClick={todoDelete} class="fas fa-trash"></span> */}
+                                                                           
+                                       
+                                        {console.log('VALUE OF NUM:-', num)}
+
+                                    </div>
+
+
+
+
+                                    {/* <span >{item.d.toString().split(' ').slice(0, 5).join(' ')}</span> */}
+
                                 </div>
 
-                            </div>
 
-                        )
-                    })
-                }
-            </ul>
+
+
+                            )
+                        })
+                    }
+                </ul>
+            </div>
+
+            <Categories  checked={checked} setChecked={setChecked}  />
+            <Removed />
         </div>
- 
+
     )
 }
 
 export default Todosboxes
+                                        
+
+

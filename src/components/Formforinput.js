@@ -14,9 +14,13 @@ function Formforinput({ setInputText, inputText, setTodoslist, todoslist }) {
 
     const submitTodoHandler = (event) => {
         event.preventDefault();
-        setTodoslist([...todoslist, { id: Date.now(), completed: false, text: inputText }])
+        setTodoslist([...todoslist, { 
+            id: Date.now(), completed: false, text: inputText, d:new Date() }])
+       
+        
         setInputText("")
         console.log("value inserted to the todos list as array")
+        console.log(todoslist);
     }
 
     return (
@@ -26,15 +30,13 @@ function Formforinput({ setInputText, inputText, setTodoslist, todoslist }) {
             <div className="input-section">
 
                 <div className="input-box">
-
-                    <input onChange={inputHandler} type="text" value={inputText} />
-                    {console.log("value of state named inputText: ", inputText)}
-
+                    <form onSubmit={submitTodoHandler}>
+                    <input onChange={inputHandler} type="text" value={inputText} />                    
+                    </form>
                 </div>
              
                 <div className="input-btn">
-                    <span className="fas fa-plus-square" onClick={submitTodoHandler}></span>
-
+                    <span className="fas fa-plus-square" onClick={submitTodoHandler}></span>             
                 </div>
 
 

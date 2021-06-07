@@ -1,46 +1,106 @@
 
 
+[time]::before {
+    
+    content: attr(time);
+    color: #74b48f;
+    position: relative;
+    top: 50px;
+    width: 49px;
+    font-size: 14px;
+   
+    height: 15px;
+  }
+
+[date]::after {
+    content: attr(date);
+    color: #74b48f;
+    position: relative;
+    top: 50px;
+   
+    width: 75px;
+    font-size: 14px;
+
+    height: 15px;
+  
+  }
+
+
+.carrier-sub{
+    display: flex;
+    justify-content: space-between;
+
+   
+  
+    margin-top: 100px;
+   
+    height: 300px;
+ 
+}
+
+.center-todobox{
+    order: 2;
+
+width: 337px;
+
+background: yellow;
+
+
+
+
+
+}
+
 .completed{
     text-decoration: line-through;
     opacity: 0.5;
 }
-.center-todobox{
-
-width: 282px;
-position: relative;
-top: 100px;
-left: 520px;
-
-
-}
 
 .center-todobox ul{
   
-    width: 280px;
+    width: 337px;
     margin: auto;
     height: 297px;
     list-style: none;
     top: 10px;
     position: relative;
+   
+    
 
     
     
 }
 
 .list-body{
-    display: flex;
-    justify-content:space-between;
-    width: 280px;
+    display: flex;    
+    width: 337px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
     background: #2ecc71;
-    box-sizing: border-box;   
+    margin-left: 0;
     border-radius: 5px 5px  30px ;
     color: #fff;    
 }
+
 .li-div{
-    width: 80%;
+   
+    flex: 6;
     height: 100%;   
+   
+}
+.li-btn{    
+    flex: 1;
+   
+}
+.li-btn span{
+    position: relative;
+    
+    color: #fff;
+    left: 62px;
+    top: 14px;
+   
+    font-size: 23px;
+
     
 }
 .li-div-sub{
@@ -55,18 +115,25 @@ left: 520px;
 
 .li-div li{
    font-size: 25px;
-   
-    
+   margin-left: -36px;  
 }
-.li-btn span{
-    position: relative;
-    right: 20px;
-    top: 14px;
-    font-size: 23px;
-}
+
+
 
 
 
 .center-todobox ul .list-body.li-div{
     margin-top: 100px;
+}
+
+.listbodydone{
+    position: relative;
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    right: 200px;
+}
+.completed2{
+    width: 0;
+    height: 0;
 }

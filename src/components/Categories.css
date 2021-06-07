@@ -1,0 +1,26 @@
+body{
+    background: magenta;
+}
+
+.center-todobox2{
+    order: 1;
+   
+    top: 100px;
+
+    width: 337px;
+   
+   
+    background: red
+}
+
+
+.listbody2{
+    display: flex;    
+    width: 337px;
+    height: 50px;
+    margin-top: 20px;
+    background: #2ecc71;
+    margin-left: 0;
+    border-radius: 5px 5px  30px ;
+    color: #fff; 
+}
