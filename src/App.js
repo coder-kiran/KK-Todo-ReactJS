@@ -9,6 +9,7 @@ function App() {
   const [inputText, setInputText] = useState('')
   const [todoslist, setTodoslist] = useState([])
   const [checked, setChecked] = useState([])
+  const [binhandle,setBinHandle] = useState([])
 
   function manageChecked(argu){
     console.log('--Managing the checked--')    
@@ -24,7 +25,7 @@ return (
       </header>
 
       <Formforinput inputText={inputText} setInputText={setInputText} todoslist={todoslist} setTodoslist={setTodoslist} />
-      <Todosboxes todoslist={todoslist} setTodoslist={setTodoslist} manageChecked={manageChecked} checked={checked} setChecked={setChecked} />
+      <Todosboxes todoslist={todoslist} setTodoslist={setTodoslist} manageChecked={manageChecked} checked={checked} setChecked={setChecked}  setBinHandle={setBinHandle} binhandle={binhandle}/>
       {console.log('app.js is this todoslist',todoslist)}
       {console.log('checked',checked)} 
     </div>
