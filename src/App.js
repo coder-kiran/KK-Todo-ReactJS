@@ -20,6 +20,7 @@ function App() {
     
 return (
     <div className="App">
+      <div className="container">
       <header>
         <h1 > KK's todo list</h1>
       </header>
@@ -29,6 +30,8 @@ return (
       {console.log('app.js is this todoslist',todoslist)}
       {console.log('checked',checked)} 
     </div>
+      </div>
+      
   );
 }
 

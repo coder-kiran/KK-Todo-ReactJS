@@ -7,31 +7,40 @@
     width: 337px;
    
    
-    background: rgb(0, 255, 234)
+  
 }
 .list-bodyr{
     display: flex;    
     width: 337px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 31px;
     background: #2ecc71;
     margin-left: 0;
     border-radius: 5px 5px  30px ;
     color: #fff;  
+    
 }
 .li-divr{
-   
+    
     flex: 6;
     height: 100%;   
- background: red;  
+
+ align-items: center;
+
+ 
 }
-.li-divr-sub{
+ .li-div-subr {
     padding: 10px;
+    
+    align-items: center;
  }
- .li-divr li {
+ .li-div-subr li {
     font-size: 25px;
-    margin-left: 100px;
+    margin-left: 20px;
     list-style: none;
+    height: 50px;
+/* margin-top: 10px; */
+    
 }
 
 .li-btnr{    

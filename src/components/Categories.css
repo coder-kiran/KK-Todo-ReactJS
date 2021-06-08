@@ -9,18 +9,22 @@ body{
 
     width: 337px;
    
-   
-    background: red
-}
-
+   }
 
 .listbody2{
     display: flex;    
     width: 337px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 31px;
     background: #2ecc71;
-    margin-left: 0;
+  
     border-radius: 5px 5px  30px ;
     color: #fff; 
+    align-items: center;
+}
+.listbody2 li{
+    list-style: none;
+    font-size: 25px;
+    margin-left: 20px;
+    
 }

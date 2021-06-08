@@ -43,7 +43,7 @@
 
 width: 337px;
 
-background: yellow;
+
 
 
 
@@ -62,7 +62,7 @@ background: yellow;
     margin: auto;
     height: 297px;
     list-style: none;
-    top: 10px;
+  
     position: relative;
    
     
@@ -75,7 +75,7 @@ background: yellow;
     display: flex;    
     width: 337px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 31px;
     background: #2ecc71;
     margin-left: 0;
     border-radius: 5px 5px  30px ;
