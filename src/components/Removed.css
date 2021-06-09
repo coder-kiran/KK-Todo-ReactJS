@@ -1,14 +1,14 @@
 
+.center-todobox3 ul{   
 
-.center-todobox3{
-    order: 3;
-    top: 100px;
-
+       
     width: 337px;
-   
-   
-  
+    margin: auto;
+    height: 297px;
+    list-style: none;  
+    position: relative;
 }
+
 .list-bodyr{
     display: flex;    
     width: 337px;
@@ -63,7 +63,8 @@
     left: 3px;
     top: 14px;
     background: inherit;
-    font-size: 23px;
-
-    
+    font-size: 23px;    
+}
+.li-btnr span:hover{
+    cursor: pointer;
 }

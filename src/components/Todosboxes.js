@@ -1,6 +1,5 @@
 import React, {  useState } from 'react'
-import Categories from './Categories';
-import Removed from './Removed';
+
 import './Todosboxes.css'
 
 function Todosboxes({ todoslist, setTodoslist, manageChecked, checked, setChecked ,binhandle,setBinHandle}) {
@@ -9,7 +8,7 @@ function Todosboxes({ todoslist, setTodoslist, manageChecked, checked, setChecke
   
 
     return (     // This was the main return statement
-        <div className="carrier-sub">
+     
 
             <div className="center-todobox">
                 
@@ -99,9 +98,9 @@ function Todosboxes({ todoslist, setTodoslist, manageChecked, checked, setChecke
                 </ul>
             </div>
 
-            <Categories checked={checked} setChecked={setChecked} todoslist={todoslist} setTodoslist={setTodoslist} setBinHandle={setBinHandle} binhandle={binhandle} />
-            <Removed setBinHandle={setBinHandle} binhandle={binhandle} />
-        </div>
+        
+           
+       
 
     )
 

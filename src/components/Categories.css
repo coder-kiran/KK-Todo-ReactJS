@@ -1,12 +1,21 @@
 
 
-.center-todobox2{
+/* .center-todobox2{
     order: 1;
    
     top: 100px;
 
     width: 337px;
    
+   } */
+  .center-todobox2 ul{    
+
+       
+    width: 337px;
+    margin: auto;
+    height: 297px;
+    list-style: none;  
+    position: relative;
    }
 
 .listbody2{
@@ -20,6 +29,9 @@
     color: rgb(119 119 119); 
     align-items: center;
     box-shadow: 0 3px 5px green;
+}
+.listbody2:hover{
+    cursor: pointer;
 }
 .listbody2 li{
     list-style: none;

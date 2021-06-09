@@ -1,7 +1,7 @@
 import React from 'react'
 import './Categories.css'
 
-function Categories({setChecked,checked,todoslist,setTodoslist,binhandle,setBinHandle}) {
+function Categories({todoslist,setTodoslist,binhandle,setBinHandle}) {
    
  
     return (

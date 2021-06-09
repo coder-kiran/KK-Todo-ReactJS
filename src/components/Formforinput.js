@@ -25,7 +25,7 @@ function Formforinput({ setInputText, inputText, setTodoslist, todoslist }) {
 
     return (
 
-        <div className="carrier">
+       
 
             <div className="input-section">
 
@@ -44,7 +44,7 @@ function Formforinput({ setInputText, inputText, setTodoslist, todoslist }) {
 
 
             </div>
-        </div>
+  
 
 
 
