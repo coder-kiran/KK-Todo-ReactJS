@@ -17,18 +17,20 @@ function App() {
     console.log(argu)
 
   }
+  
     
 return (
     <div className="App">
+     
       <div className="container">
+      
       <header>
-        <h1 > KK's todo list</h1>
+        <h1 > My Todo List</h1>
       </header>
-
+     
       <Formforinput inputText={inputText} setInputText={setInputText} todoslist={todoslist} setTodoslist={setTodoslist} />
       <Todosboxes todoslist={todoslist} setTodoslist={setTodoslist} manageChecked={manageChecked} checked={checked} setChecked={setChecked}  setBinHandle={setBinHandle} binhandle={binhandle}/>
-      {console.log('app.js is this todoslist',todoslist)}
-      {console.log('checked',checked)} 
+     
     </div>
       </div>
       

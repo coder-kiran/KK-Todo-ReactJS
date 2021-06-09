@@ -2,3 +2,9 @@
 {
     padding: 10px;
 }
+header h1{
+    text-align: center;
+   color: rgb(119 119 119);
+    font-size: 73px;
+    padding: 10px;
+  }

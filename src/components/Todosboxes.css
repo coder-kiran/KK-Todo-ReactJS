@@ -3,9 +3,9 @@
 [time]::before {
     
     content: attr(time);
-    color: #74b48f;
+    color: #434443;
     position: relative;
-    top: 50px;
+    top: 55px;
     width: 49px;
     font-size: 14px;
    
@@ -14,9 +14,9 @@
 
 [date]::after {
     content: attr(date);
-    color: #74b48f;
+    color: #434443;
     position: relative;
-    top: 50px;
+    top: 55px;
    
     width: 75px;
     font-size: 14px;
@@ -76,17 +76,20 @@ width: 337px;
     width: 337px;
     height: 50px;
     margin-top: 31px;
-    background: #2ecc71;
+    background: black;
     margin-left: 0;
-    border-radius: 5px 5px  30px ;
-    color: #fff;  
+    /* border-radius: 5px 5px  30px ; */
+    color: rgb(119 119 119);  
+    box-shadow: 0px 3px 5px blue;
+    
+    
 }
 .list-body-none{
     display: none;
 }
 
 .li-div{
-   
+    background: inherit;
     flex: 6;
     height: 100%;   
    
@@ -94,11 +97,12 @@ width: 337px;
 .li-btn{    
     flex: 1;
    
+    background: inherit;
 }
 .li-btn span{
     position: relative;
-    
-    color: #fff;
+    background: inherit;
+    color:rgb(119 119 119); 
     left: 62px;
     top: 14px;
    
@@ -107,18 +111,22 @@ width: 337px;
     
 }
 .li-div-sub{
-   padding: 10px;
+   
+   background: inherit;
+   margin-top: 8px;
+   margin-left: 20px;
 }
 .li-button{
     height: 100%;
     width: 20%;
    
-    
+    background: inherit;
 }
 
 .li-div li{
    font-size: 25px;
    margin-left: -36px;  
+   background: inherit;
 }
 
 

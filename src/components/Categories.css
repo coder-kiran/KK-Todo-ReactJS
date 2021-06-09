@@ -1,6 +1,4 @@
-body{
-    background: magenta;
-}
+
 
 .center-todobox2{
     order: 1;
@@ -16,15 +14,17 @@ body{
     width: 337px;
     height: 50px;
     margin-top: 31px;
-    background: #2ecc71;
+    background: black;
   
-    border-radius: 5px 5px  30px ;
-    color: #fff; 
+    /* border-radius: 5px 5px  30px ; */
+    color: rgb(119 119 119); 
     align-items: center;
+    box-shadow: 0 3px 5px green;
 }
 .listbody2 li{
     list-style: none;
     font-size: 25px;
     margin-left: 20px;
+    background: inherit;
     
 }

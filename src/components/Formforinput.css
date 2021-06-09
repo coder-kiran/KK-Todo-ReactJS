@@ -1,5 +1,5 @@
 .center-todo{
-    background: #2ecc71;
+  
     height: 40px;
     width: 240px;
     margin: auto;
@@ -27,12 +27,7 @@
 }
 
 
-header h1{
-    text-align: center;
-    color: #4ef593;
-    font-size: 73px;
-    padding: 10px;
-  }
+
 
 .input-section{
     display: flex;
@@ -50,45 +45,39 @@ header h1{
 }
 .input-box input{
     box-sizing: border-box;
-    width: 282px;
+    width: 338px;
     padding: 8px;
     font-size: 20px;
     border: none;
-    
+    background: black;
     font-family: 'Suez One', serif;
-    color: #4ef593;
-    background: #35d6783d;
-    border-radius: 5px;
-}   
-.input-box input:focus{
-   outline:  none;
-  
+    color:rgb(119 119 119); 
+    box-shadow: 0px 1px 4px rgb(43, 40, 40);
+    border-radius: 4px;
     
+   
+}   
+.input-box input:focus{  
+  
+  outline: none;
 }
-.input-box input:hover{
-    background: #268d513b;
-}
+
 .input-btn{
     height: 45px ;  
     box-sizing: border-box;
- 
+   margin-left: 10px;
    
   
 }
 
 
-.input-btn span {   
-    margin-bottom: 100px;
-    margin-left: 15px;
-    cursor: pointer;      
-    color: #2ecc71;
-    font-size: 48px;
-   
-
-  
-   
-  }
+.input-btn span {
+    margin-left: -46px;
+    cursor: pointer;
+    font-size: 35px;
+    margin-top: 6px;
+}
   .input-btn span:hover{
-    color: #4ef593;
+    color: #212221;
   }
 
