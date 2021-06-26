@@ -2,17 +2,17 @@
 .center-todobox3 ul{   
 
        
-    width: 337px;
+    width: 100%;
     margin: auto;
-    height: 297px;
+    min-height: 297px;
     list-style: none;  
     position: relative;
 }
 
 .list-bodyr{
     display: flex;    
-    width: 337px;
-    height: 50px;
+    width: 100%;
+    min-height: 50px;
     margin-top: 31px;
     background: black;
     margin-left: 0;
