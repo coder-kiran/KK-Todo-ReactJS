@@ -12,7 +12,7 @@
 .list-bodyr{
     display: flex;    
     width: 100%;
-    min-height: 50px;
+    min-height: 100px;
     margin-top: 31px;
     background: black;
     margin-left: 0;
@@ -45,9 +45,8 @@
     margin-left: 20px;
     list-style: none;
     height: 31px;
-    background: inherit;
-    
-/* margin-top: 10px; */
+    background: inherit;   
+    margin-top: 30px;
     
 }
 
@@ -58,10 +57,9 @@
 }
 .li-btnr span{
     position: relative;
-    
     color:rgb(119 119 119); 
     left: 3px;
-    top: 14px;
+    top: 33px;
     background: inherit;
     font-size: 23px;    
 }

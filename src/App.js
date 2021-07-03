@@ -34,15 +34,19 @@ return (
       </Col>
       </Row>
 
-      <Row fluid className="mt-5  ">        
+      <Row fluid className="mt-5  ">
+        
       <Col xs={12} sm={12} md={12} lg={4} xl={4}>
+      <p style={{textAlign:'center'}}><u>Active</u></p>
+      <Todosboxes todoslist={todoslist} setTodoslist={setTodoslist} manageChecked={manageChecked} checked={checked} setChecked={setChecked}  setBinHandle={setBinHandle} binhandle={binhandle}/>  
+       </Col>
+       
+      <Col xs={12} sm={12} md={12} lg={4} xl={4} >
       <p style={{textAlign:'center'}}><u>Completed</u></p>
       <Categories  todoslist={todoslist} setTodoslist={setTodoslist} setBinHandle={setBinHandle} binhandle={binhandle} />
       </Col>
       
-      <Col xs={12} sm={12} md={12} lg={4} xl={4}>
-      <p style={{textAlign:'center'}}><u>Active</u></p>
-      <Todosboxes todoslist={todoslist} setTodoslist={setTodoslist} manageChecked={manageChecked} checked={checked} setChecked={setChecked}  setBinHandle={setBinHandle} binhandle={binhandle}/>      </Col>
+     
     
       <Col xs={12} sm={12} md={12} lg={4} xl={4}>    
       <p style={{textAlign:'center'}}><u>Dropped</u></p>

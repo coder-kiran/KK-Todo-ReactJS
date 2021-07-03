@@ -10,9 +10,9 @@ function Todosboxes({ todoslist, setTodoslist, manageChecked, checked, setChecke
     return (     // This was the main return statement
      
 
-            <div className="center-todobox">
+            <div className="centerTodobox  ">
                 
-                <ul>
+                <ul >
                     
                     {
                         
@@ -73,24 +73,25 @@ function Todosboxes({ todoslist, setTodoslist, manageChecked, checked, setChecke
 
 
                             return (
-                                <div key={item.id} className={`${!item.completed? "list-body" : "list-body-none" }`}
+                                <div key={item.id}  className={`${!item.completed? "listBody " : "list-body-none" }`}
                                     date={item.d.toDateString()}
                                     time={item.d.toLocaleTimeString('en-US')}>
 
                                                                   
                               
-                                    <div className="li-div" onClick={todoDelete}>
-                                        <div className="li-div-sub"><li className={`${item.completed ? "completed" : ""}`}>{item.text}</li>
+                                    
+                                        <div className="liDiv"><li className={`${item.completed ? "completed" : ""}`}>{item.text}</li>
                                         </div>
-                                    </div>
+                                   
 
-                                    <div className="li-btn" >
+                                    <div className="liBtn" >
                                         <span onClick={todoDone} className="fas fa-check check"></span>                                       
                                         {manageChecked(num)}                                      
-                                        {/* <span onClick={todoDelete} class="fas fa-trash"></span> */}                                      
+                                        <span onClick={todoDelete} class="fas fa-trash"></span>                                      
                                     </div>
                                     {/* <span >{item.d.toString().split(' ').slice(0, 5).join(' ')}</span> */}
                                 </div>
+                               
                             )
 
                 })

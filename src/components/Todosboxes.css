@@ -5,8 +5,8 @@
     content: attr(time);
     color: #434443;
     position: relative;
-    top: 55px;
-    width: 49px;
+    top: 60px;
+    width: 55px;
     font-size: 14px;
    
     height: 15px;
@@ -16,7 +16,7 @@
     content: attr(date);
     color: #434443;
     position: relative;
-    top: 55px;
+    top: 60px;
    
     width: 75px;
     font-size: 14px;
@@ -38,34 +38,48 @@
  
 }
 
-/* .center-todobox{    
-width: 337px;
-} */
+
    
 .completed{
     text-decoration: line-through;
     opacity: 0.5;
 }
+.centerTodobox{
+    width: 100%;
+    min-height: 50px;
+   
+}
 
-.center-todobox ul{
-  
+
+.centerTodobox ul{   
+
+       
     width: 100%;
     margin: auto;
     min-height: 297px;
     list-style: none;  
-    position: relative; 
+    position: relative;
+    
 }
 
-.list-body{
-    display: flex;    
+
+.listBody{
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;
     width: 100%;
-    min-height: 50px;
+    min-height: 100px;
     margin-top: 31px;
     background: black;
     margin-left: 0;
     /* border-radius: 5px 5px  30px ; */
-    color: rgb(119 119 119);  
-    box-shadow: 0px 3px 5px blue;   
+    color:rgb(119 119 119); 
+    box-shadow: 0px 3px 5px rgb(4, 19, 233);      
+}
+.listBody li{
+    list-style: none;
+    font-size: 25px;
+    background: inherit;
 }
 .list-body:hover{
     cursor: not-allowed;
@@ -73,48 +87,51 @@ width: 337px;
 .list-body-none{
     display: none;
 }
-.li-div{
-    background: inherit;
-    flex: 6;
-    height: 100%;     
-    width: 80%; 
-    
+
+.liDiv{
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: -222px;
+
+ 
 }
+
 .li-div:hover{
     cursor: pointer;
 }
-.li-btn{    
-    flex: 1;   
+
+.liBtn {   
+    display: flex;
+    align-items: center;
     background: inherit;
+    height: 50px;
+    width: 50px;
+    margin-right: -252px;
+    justify-content: space-between;
 }
-.li-btn span{
+.liBtn span{
     position: relative;
+    margin-top: 35px;
+    color: rgb(119 119 119);
+    left: 3px;
+    top: -17px;
     background: inherit;
-    color:rgb(119 119 119); 
-    left: 62px;
-    top: 14px;   
-    font-size: 23px;    
+    font-size: 23px; 
 }
-.li-btn span:hover{
+.liBtn span:hover{
     cursor: pointer;
 }
-.li-div-sub{
-   
-   background: inherit;
-   margin-top: 8px;
-   margin-left: 20px;
-}
+
+
 .li-button{
     height: 100%;
     width: 20%;   
     background: inherit;
 }
 
-.li-div li{
-   font-size: 25px;
-   margin-left: -36px;  
-   background: inherit;
-}
+
 
 /* .center-todobox ul .list-body.li-div{
     margin-top: 100px;
